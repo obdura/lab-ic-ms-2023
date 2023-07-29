@@ -26,4 +26,8 @@ Revisa el archivo `docker-compose.yml`.
 
 ¿Cómo se relacionan el archivo `docker-compose.yml` y el archivo `movies-api/Dockerfile`?
 
-* 
+* El servicio `movies-api` descrito en el archivo `docker-compose` _invoca_ al dockerfile de la carpeta `movies-api`. Por otro lado, el servicio `movies-api` *utiliza* al servicio postgres a traves de la dependencia indicada en `dependes_on`.
+
+¿Qué crees que hace el atributo `context` debajo de `build` (está en la linea 6 del archivo `docker-compose.yml`)?
+
+* Señala la ruta del directorio donde se ubica el dockerfile definiendo un contexto.
